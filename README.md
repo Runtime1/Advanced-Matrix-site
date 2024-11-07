@@ -24,12 +24,12 @@ A interactive web-based hacking simulation environment with a retro-futuristic i
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/advanced-habibi-hackers-den.git
+   git clone https://github.com/your-username/Advanced-Matrix-site.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd advanced-habibi-hackers-den
+   cd Advanced-Matrix-site
    ```
 
 3. Open `index.html` in a modern web browser.
