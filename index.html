@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TEST MATRIX SIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/vis-network.min.js"></script>
+</head>
+<body>
+
+    <div id="matrix-rain"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="Habibi">Matrix</h1>
+        </header>
+        <nav id="mobile-nav">
+            <button id="terminal-nav">Terminal</button>
+            <button id="network-nav">Network</button>
+            <button id="files-nav">Files</button>
+            <button id="editor-nav">Editor</button>
+            <button id="crypto-nav">Crypto</button>
+            <button id="challenge-nav">Challenge</button>
+        </nav>
+        <main id="desktop">
+            <div class="window" id="terminal-window">
+                <div class="window-header">
+                    <span>Terminal</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div id="terminal-output"></div>
+                    <div id="terminal-input-line">
+                        <span class="prompt">$</span>
+                        <input type="text" id="terminal-input" autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="window" id="network-window">
+                <div class="window-header">
+                    <span>Network Topology</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div id="network-topology"></div>
+                </div>
+            </div>
+            <div class="window" id="file-window">
+                <div class="window-header">
+                    <span>File Explorer</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <ul id="file-list"></ul>
+                </div>
+            </div>
+            <div class="window" id="editor-window">
+                <div class="window-header">
+                    <span>File Editor</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div id="editor"></div>
+                </div>
+            </div>
+            <div class="window" id="crypto-window">
+                <div class="window-header">
+                    <span>Crypto Miner</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div id="crypto-miner">
+                        <button id="start-mining">Start Mining</button>
+                        <div id="mining-progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="window" id="challenge-window">
+                <div class="window-header">
+                    <span>Hacking Challenge</span>
+                    <div class="window-controls">
+                        <button class="minimize-btn">-</button>
+                        <button class="maximize-btn">□</button>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div id="challenge-content"></div>
+                    <input type="text" id="challenge-input" placeholder="Enter your answer">
+                    <button id="submit-challenge">Submit</button>
+                </div>
+            </div>
+        </main>
+        <div id="taskbar">
+            <div id="start-menu">Start</div>
+            <div id="taskbar-items"></div>
+            <div id="system-tray">
+                <span id="clock"></span>
+            </div>
+        </div>
+        <div id="context-menu">
+            <ul>
+                <li id="new-file">New File</li>
+                <li id="new-folder">New Folder</li>
+                <li id="refresh">Refresh</li>
+            </ul>
+        </div>
+        <div id="status-bar">
+            <div id="cpu-usage">CPU: <span>0%</span></div>
+            <div id="memory-usage">RAM: <span>0%</span></div>
+            <div id="network-activity">Network: <span>0 KB/s</span></div>
+        </div>
+        <div id="popup-container"></div>
+        <div id="hacking-progress-container">
+            <div id="hacking-progress-bar"></div>
+            <div id="hacking-progress-text">Hacking Progress: 0%</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
